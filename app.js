@@ -1,7 +1,6 @@
 const express = require('express');
 const helmet = require("helmet");
 const notesRouter = require("./routes/notes.routes");
-const userRouter = require("./routes/users.routes");
 const authRouter = require("./routes/auth.routes");
 const folderRouter = require("./routes/folders.routes");
 const errorHandler = require("./middlewares/error.middleware");
@@ -23,7 +22,7 @@ app.use(morgan("combined", {
 //Routes
 
 app.use("/api/notes", notesRouter);
-app.use("/api/users", userRouter);
+// app.use("/api/users", userRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/folders", folderRouter);
 

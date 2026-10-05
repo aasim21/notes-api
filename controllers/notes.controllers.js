@@ -1,4 +1,4 @@
-const result = require("../data/data");
+
 const Note = require("../models/notes.model");
 const Folder = require("../models/folders.model");
 
